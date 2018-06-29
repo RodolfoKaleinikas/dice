@@ -1,0 +1,102 @@
+*,
+*::before,
+*::after {
+    padding: none;
+    margin: none;
+    box-sizing: border-box;
+}
+body {
+    background-color: #2a2b2b;
+}
+
+ .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+ }
+
+ .dice {
+     width: 100px;
+     height: 100px;
+     background: #efeded;
+     border-radius: 10px;
+     box-shadow: 0px 3px 0px 0px #f7f4f4 inset,
+                0px -3px 0px 0px #afafaf inset,
+                0px 0px 0px 3px #bcbcbc inset;
+     padding: 10px;
+ }
+
+ .pip {
+     display: block;
+     width: 20px;
+     height: 20px;
+     border-radius: 50%;
+     background: #2a2b2b;
+ }
+
+ .first-face {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .second-face {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .third-face {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .fourth-face {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .fifth-face {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .sixth-face {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .sixth-face .column {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+ }
+
+ .fourth-face .column {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+ }
+
+ .fifth-face .column {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+ }
+
+ .fifth-face .column:nth-of-type(2){
+     justify-content: center;
+ }
+
+ .second-face .pip:nth-of-type(2) {
+     align-self: flex-end;
+ }
+
+ .third-face .pip:nth-of-type(2){
+     align-self: center;
+ }
+
+ .third-face .pip:nth-of-type(3) {
+     align-self: flex-end;
+ }
